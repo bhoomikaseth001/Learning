@@ -1,4 +1,1 @@
-str1.startswith("World"))
- 
-
-
+70
