@@ -29,4 +29,4 @@ name2=("Arnav","Ashwani","Ayush")
 friends=name1+name2
 print(friends)
 print(name1.count("Ananya"))
-print(name1.index("Ananya",1,4))
+print(name1.index("Ananya",1,4)) #first index 
