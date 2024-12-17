@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- meta tags are used to improve ranking - SEO(search engine optimization)  -->
+    <h1>Heading Level 1</h1> <!--SEO will give preference to h1 and then to others -->
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
+
+    <h1>Grocery Items</h1>
+    <ul type ="circle">
+      <li>Butter</li>
+      <li>Milk</li>
+      <li>Eggs</li>
+      <li>Cereal</li>
+    </ul>
+
+    <h1>Brushing Instructions</h1>
+    <ol type="1" start="5"></ol>      <li>Acquire toothbrush and toothpaste</li>
+      <li>Squeeze a small amount of paste onto the toothbrush bristles</li>
+      <li>Lightly rinse brush + paste with water</li>
+      <li>Move brush against teeth in a back and forth motion</li>
+    </ol>
+
+    <div style="border: 1px solid; margin:50px; ">
+        <h1>Group A</h1>
+        <p>this is first group of content</p>
+      </div>
+      <div>
+        <h1>Group B</h1>
+      </div>
+
+      <h1 id="companyName">Innoskrit</h1>
+      
+<!-- id elements can be used to identify specific elements on page -->
+<h1 id="pageTitle">id and class attributes</h1>
+
+<!-- class elements can be used to identify multiple elements that have
+    similar characteristics -->
+<p class="bordered">This element has a border.</p>
+
+<!-- the same class value can be used on multiple elements -->
+<p class="bordered">This element also has a border.</p>
+
+<!-- you can include multiple class values for a single element -->
+<p class="red bordered">This element has red text and a border.</p>
+<p class="blue bordered">This element has blue text and a border.</p>
+
+  
+<h1>Waterfall Photography</h1>
+    <div class="imgContainer">
+      <img src="longexposurewaterfall1.jpg" alt="Long Exposure Waterfall" />
+      <h4 class="caption">Learn how to take stunning waterfall pictures!</h4>
+    </div>
+
+    <h1>Login Page</h1>
+    <form>
+      <label for="username">
+        Username:
+        <input type="text" id="username" name="username" />
+      </label>
+      <label for="password">
+        Password:
+        <input type="password" id="password" name="password" />
+      </label>
+      <p>Try inputting text that isn't email and press 'Enter'</p>
+      <label for="email">
+        E-mail Address:
+        <input type="email" id="email" name="email" />
+      </label>
+      <label for="multiLineInput">
+        <p>This is an input element that can include new lines:</p>
+        <textarea id="multiLineInput"></textarea>
+      </label>
+
+      <label for="multiLineInput">
+        <p>This is an input element that can include new lines:</p>
+        <textarea rows="5" cols="50" id="multiLineInput"></textarea>
+      </label>
+      <button type="submit">Submit </button>
+
+      <label for="selector">
+        <p>
+          A <code>select</code> element allows users to input from a selection:
+        </p>
+        <select id="selector">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option selected>Option 3</option>
+          <option>Option 4</option>
+        </select>
+      </label>
+
+      <h3>What time is best to give you a call?</h3>
+      <label for="morning">
+        Morning
+        <input type="radio" id="morning" name="callTime" checked />
+      </label>
+      <label for="afternoon">
+        Afternoon
+        <input type="radio" id="afternoon" name="callTime" />
+      </label>
+      <label for="evening">
+        Evening
+        <input type="radio" id="evening" name="callTime" />
+      </label>
+      
+    </form>
+</body>
+</html>
+
+<script> document.getElementById("companyName").style.color="red"</script>
+
