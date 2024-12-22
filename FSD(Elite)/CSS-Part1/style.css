@@ -1,0 +1,33 @@
+/* Enternal css */
+/* universal selector */
+*{
+    margin:0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* using class as a selector */
+.container/*Selector*/{
+    color/*property*/:blue;/*value*/
+    border:1px solid black;
+    color:blue;
+    height :50px;
+    /* width :50px; if we remove width then by default it will take 100%*/
+    /* padding :10px;
+    margin: 10px 0px 0px 0px; */
+}
+/* GROUP SELECTOR-- separated by commas */
+.text1, .text2{
+    color:brown;
+}
+/* using id as a selector */
+#container{
+    color:pink;
+}
+
+/* using tag as a selector */
+p{
+    color:purple;
+}
+
+
+
+
