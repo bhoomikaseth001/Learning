@@ -1,11 +1,13 @@
 '''Tuples are immutable, hence if you want to add, remove or change tuple items, then first convert tuple to a list'''
 tup=(1,2,3)
 tup=(1)   #<class 'int'> 1
-tup=(1,)  #<class 'tuple'> (1,)
-print(type(tup),tup)
+tup=(1,)  #<class 'tuple'> (1,)  writing a , will make sure that you are creating a tuple
+print(type(tup),tup) #<class 'tuple'> (1,2,3)
 tup1=(1,4,678,"Hello",False)
 if 3421 in tup:
     print("Yes present")
+
+     
 tup2=tup1[1:4]
 print((tup2))
 
@@ -15,9 +17,9 @@ print("\n")
 
 countries=("Spain","Italy","India","England","Germany")
 temp=list(countries)
-temp.append("Russia")
-temp.pop(3)
-temp[2]="Finland"
+temp.append("Russia")  #add item
+temp.pop(3)   #remove item
+temp[2]="Finland"   #change item
 countries=tuple(temp)
 print(countries)
 
@@ -29,4 +31,4 @@ name2=("Arnav","Ashwani","Ayush")
 friends=name1+name2
 print(friends)
 print(name1.count("Ananya"))
-print(name1.index("Ananya",1,4)) #first index 
+print(name1.index("Ananya",1,4)) #first index between 1 and 4
