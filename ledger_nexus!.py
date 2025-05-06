@@ -635,7 +635,7 @@ with tab3:
     - Detects large Ethereum transactions and suspicious activities.
     - Predicts fraudulent transactions using Machine Learning.
 
-    **Developed by:** [Your Name]
+    **Developed by:** [Ledger Nexus Team]
     """)
 
     st.info("Disclaimer: This app is for educational/demo purposes. Always verify transactions manually!")
