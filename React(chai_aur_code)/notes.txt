@@ -1,0 +1,5 @@
+why to learn React?
+- hype, job, trend, built UI
+-makes easy to manage & built "complex" frontend
+(UI were created using JQuery, JS and CSS libraries before the existence of React )
+
