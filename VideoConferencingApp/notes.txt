@@ -1,0 +1,8 @@
+three pillars of WebRTC
+
+1. MediaStream - getUserMedia() - captures audio and video from user devices
+2. RTCPeerConnection - Manages peer to peer connections and media transport
+3. RTCDataChannel -  Enables bi-directional data communication
+
+
+session detection protocol
