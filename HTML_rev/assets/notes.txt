@@ -1,0 +1,1 @@
+all the audios and videos are stored in asset folder
