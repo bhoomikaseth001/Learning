@@ -1,0 +1,13 @@
+//arrays always create a shallow copy- share the same reference
+
+const arr=[0,1,2,4]
+const  arr2= new Array(0,1,3,4)
+console.log(arr[1]);
+
+//Methods
+arr.push(6); //adds value to the array
+arr.pop(); //removess the last value
+arr.unshift(9); //adds value to the beginning of the array
+arr.shift(); //removes the first value of the array
+console.log(arr);
+console.
