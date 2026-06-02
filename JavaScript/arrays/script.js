@@ -134,9 +134,17 @@ colors.splice(1, 0, "red", "blue");
 let a1=[1,2];
 let b1=[3,4];
 
-let c=[...a, ...b];
+let c=[...a1, ...b1];
+
 
 //Q. Add "india" at the begin using spread operator
 let countries=["USA", "Japan"];
 countries=["india", ...countries];
 
+//BLUNDERS
+
+[100,20,3].sort();  //[100,20,3]->"100", "20","3" (wrong)......sort() will change the numeric array into a string array
+
+//the correct way to do this is....
+
+[100,20,3].sort((a,b)=>a-b); //this will correctly sort the array in ascending order
