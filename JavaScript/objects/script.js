@@ -1,9 +1,10 @@
 //To declare the object
 let obj={
     name:"bhoomika",
-    age:26,
+    age:21,
     email:"abc@gmail.com",
 };
+//KEY CAN BE BOOLEAN OR NUMBER
 
 //To access the object
 console.log(obj.age);
@@ -56,16 +57,66 @@ for(let key in obj){
 Object.keys(obj); //['name', 'age', 'email']
 
 
-//Object.entries -  creates an array that contains the array of the key-value pair
+//------Object.entries -  creates an array that contains the array of the key-value pair
 
-Object.entries(obj);//[Array(2), Array(2), Array(2)]
+Object.entries(obj);//[['name','bhoomika'],['age','21'],['email','abc@gmail.com']]  
 
 //Spread operator
 let obj2={...obj};
 
-//Object.assign - to copy - obslete
+//-------Object.assign - to copy - obslete
 let obj3=Object.assign({},obj);
 let obj4 = Object.assign({price:Infinity},obj);
 
 
 //Deep Cloning
+//if you have create a nested object then copying by spread operator is not an efficient as for nested object only the top level values are passed as real values aur jo andar ke nested objects hote h vo wapas se reference pass karne lagte h
+
+let obj5={
+    name:"bhoomika",
+    age:26,
+    email:"abc@gmail.com",
+    address:{
+        city:"lucknow",
+    },
+};
+
+//let obj6={...obj5};
+//obj6.address.city="Delhi"   //this will also change obj5
+
+//using deep cloning
+let obj6= JSON.parse(JSON.stringify(obj5));
+obj6.address.city="Delhi";
+
+
+//OPTIONAL CHAINING 
+
+console.log(obj5?.address?.city);//? will be treated as the "optional" so that it will not give error incase the property is not found and will give undefined as output
+
+ 
+//COMPUTED PROPERTIES
+let role="admin";
+
+let obj7={
+    name:"bhoomika",
+    age:26,
+    email:"abc@gmail.com",
+    address:{
+        city:"lucknow",
+    },
+    [role]:"Aman",  //admin : "Aman"
+                    //this field will the added to the object
+};
+
+
+//---------------------------------------------------//
+
+//practice
+
+//Q. Deconstruct the key "first-name" as a varible called firstName
+
+const User={
+    "first-name":"Bhoomika",
+};
+
+let {"first-name":firstName} = User;

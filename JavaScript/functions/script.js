@@ -194,6 +194,23 @@ counter(); //1
 counter(); //2
 
 
+//Q.closure
 
+function counterr(){
+    let count=0;
+    return function(){
+        count++;
+        return count;
+    };
+}
+
+let asd= counterr();//will set count=0
+console.log(asd());//1 //only executes the returned function
+console.log(asd());//2
+console.log(asd());//3
+console.log(asd());//4
+
+let d = counterr();//will set count=0
+console.log(d());//1
 
 
