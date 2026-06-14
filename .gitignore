@@ -2,5 +2,8 @@ DATABASE_MySQL/
 DJANGO/
 REACT(Movie_tut)/
 React(chai_aur)code)/
+JavaScript(chai_aur_code)/
+VideoConferencingApp/
+
 *.mp3
 *.mp4
