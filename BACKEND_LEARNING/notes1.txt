@@ -1,0 +1,39 @@
+// //const http = require("http");  //used with commonjs
+// import http from "http"; //used with module js
+
+// const port = 8000;
+// //creating server
+// const server = http.createServer((req, res) => {
+//     //creating routes
+//     if (req.url == '/') {
+//         res.end("welcome to home route")
+//     }
+//     else if (req.url == '/about') {
+//         res.end("welcome to about route")
+//     }
+//     else if (req.url == '/contact') {
+//         res.end("welcome to contact route")
+//     }
+//     else {
+//         res.end("404 Not Found")
+//     }
+
+// })
+
+// //there are approx 65536 ports, 1024 reserved ports
+
+
+// server.listen(port, () => {
+//     console.log(`server is running on port ${port}`);
+// });
+
+
+
+
+Wherever we connect the backend with the frontend we get CORS error
+CORS- Cross Origin Resource Sharing 
+    - is a middleware in express
+    - It is a security feature in web browsers that prevents reqs   from  different origins unless explicitly allowed by the server
+    - same-origin Policy restrivts requests from diff origin (different domain, protcol, port)
+    -cors allows server to specify server who can access their Resources
+      

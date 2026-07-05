@@ -1,0 +1,22 @@
+// app.use(express.json()) //middleware that converts the json formatted data into our backend language....built-in middleware
+
+// app.get('/', (req, res) => {
+//     res.send("<h1>home page</h1>")
+// })
+
+// app.post('/', (req, res) => {
+//     let body = req.body
+//     console.log(body)
+// })
+
+// app.get('/about', (req, res) => {
+//     res.json({ name: "bhoomika", age: "21" })
+// })
+
+// app.get('/contact', (req, res) => {
+//     res.send("contact page")
+// })
+
+// app.listen(port, () => {
+//     console.log(`erver is running at port ${port}`)
+// })
