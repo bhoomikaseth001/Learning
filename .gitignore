@@ -7,3 +7,4 @@ VideoConferencingApp/
 
 *.mp3
 *.mp4
+node_modules/
