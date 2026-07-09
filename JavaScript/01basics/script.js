@@ -33,6 +33,21 @@
 
 //REDECLARATION AND REASSIGNMENT
 //redeclaration is allowed in var....but it is a problem which is fixed in let
+//let cannot be redeclared inside its own block but can be redeclared in another
+// function f1() {
+//     {
+//     var a=5;
+//     let b=6;
+//     console.log(a)
+//     console.log(b)
+
+//     var a=15;
+//     let b=19;
+// }
+// }
+
+// f1();
+
 //only reassignment is allowed in let
 
 //--------------------------------------------------//
@@ -47,7 +62,7 @@
 //---------------------------------------------------//
 
 //HOISTING IMPACT PER TYPE
-  
+
 //hoisting= jab ek variable ko js me banaate h toh wo variable do parts me break ho jaata h, uska declare part upar chala jaata aur uska initialization part neeche reh jaata h
 
 // var b = 12; //this is broken in 2 parts as below
@@ -59,6 +74,18 @@
 //var->hoist->undefined
 //let->hoist->X
 //const->hoist->X
+
+
+
+// var: Hoisted and immediately initialized with the default value of undefined.
+// let: Hoisted but left uninitialized. Accessing it before the actual line of declaration triggers a ReferenceError.
+//because const and let are block scoped so they are hoisted inside the block
+// This uninitialized waiting period for let is known as the Temporal Dead Zone (TDZ).
+
+//function declaration is also hoisted
+
+//DIFFERENCE B/W let and var
+//on the basis of - scope - we get ReferenceError, redeclaration-Syntax Error, hoisting- ReferenceError
 
 //------------------------------------------//
 // const person={name:"Harsh"};
@@ -73,6 +100,12 @@
 
 // REFERENCE - inko copy karne par real copy nahi milegi but aapko reference milega parent ka...arrays, objects, functions....[]  {} ()
 
+//  Primitive          vs        Reference
+// -fixed in size               - dynamic
+// -store value                 - store reference
+// -stack                       - heap
+// -immutable                   - mutable
+
 
 //null...means aapne jaan kar koi value nhi di 
 //undefined...means aapne ek variable banaya aur usee value nhi di toh use by default undefined value mil jaati h
@@ -83,15 +116,15 @@
 
 
 //bigint-> 
-let t=9007199254740991n
+let t = 9007199254740991n
 console.log(t);
-console.log(t+3n);
-console.log(t+4n);
+console.log(t + 3n);
+console.log(t + 4n);
 
 
 //arrays
-let a=[1,2,3]
-let b=a
+let a = [1, 2, 3]
+let b = a
 b.pop() //since b ke pass a ka referrence h and not the actual value toh b se pop karne per a se bhi pop ho jaayega
 console.log(a);
 console.log(b);
@@ -101,14 +134,14 @@ console.log(b);
 
 //TYPE COERSION
 
-console.log("5"+1) //agar js ko ek bhi string operand mil jaata h toh vo + se add nhi concate kar deta 
+console.log("5" + 1) //agar js ko ek bhi string operand mil jaata h toh vo + se add nhi concate kar deta 
 
 //0 false "" null undefined NaN document.all
 //to check the truthy or falsy if a value we need to put !! in front of the value
 
-console.log(true+false) //true=1, false=0 ->1+0->1
-console.log(null+1) //0+1 =>1
-console.log(5+"5") //55
+console.log(true + false) //true=1, false=0 ->1+0->1
+console.log(null + 1) //0+1 =>1
+console.log(5 + "5") //55
 console.log(!!undefined) //false
 
 console.log(typeof NaN === 'number') //true...because NaN is a failed number operation eg. 2 X "harsh" will give you NaN...i.e. it is a type of number but is a failed operation
@@ -116,10 +149,10 @@ console.log(typeof NaN === 'number') //true...because NaN is a failed number ope
 console.log(typeof null) //object
 console.log(typeof []) //object
 
-console.log('5'+1) // + is there hence concat and create a string '51'
-console.log('5'-1) // - is there hence js will convert it to a number 4
+console.log('5' + 1) // + is there hence concat and create a string '51'
+console.log('5' - 1) // - is there hence js will convert it to a number 4
 
 console.log(+"5") // 5...this will convert the string to a number
 console.log(+"bhoomika")//NaN...as this cannot be converted to a number
 
- //-------------------------------------------------------------------//
+//-------------------------------------------------------------------//
